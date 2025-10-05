@@ -157,10 +157,10 @@
 /* Right side full image */
 .hero-image {
   flex: 1.5;
-  background-image: url("./images/Nescafe.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
 }
 
 /* Responsive design */
