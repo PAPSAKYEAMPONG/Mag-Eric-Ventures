@@ -14,6 +14,10 @@ import cerealsImg from '../assets/snowflakes.jpg';
 import drinksImg from '../assets/caprisun.png';
 import toiletriesImg from '../assets/olayvitaminc.jpg';
 import householdImg from '../assets/softner.jpg';
+import product1 from '../assets/Oreo.jpg';
+import product2 from '../assets/nutella copy.jpg';
+import product3 from '../assets/snowflakes copy.jpg';
+import product4 from '../assets/Pringles.jpg';
 
 const images = [kreteaz, flaxseed, Avocadooil, olaycoconutoil, pepper, garlicherb, irishspring, softner, Nescafe];
 
@@ -47,6 +51,7 @@ const Home = () => {
         style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
       ></div>
       </section>
+      
       <section className="categories">
         <h2>Shop by Category</h2>
         <div className="category-grid">
@@ -73,6 +78,36 @@ const Home = () => {
           <div className="category-card">
             <img src={householdImg} alt="Household Essentials" />
             <h3>Household Essentials</h3>
+          </div>
+        </div>
+      </section>
+      {/* Featured Products */}
+      <section className="featured-products">
+        <h2>Featured Products</h2>
+        <div className="product-grid">
+          <div className="product-card">
+            <img src={product1} alt="Oreo" />
+            <h3>Oreo Biscuits</h3>
+            <p>GHS 25.00</p>
+            <button>Add to Cart</button>
+          </div>
+          <div className="product-card">
+            <img src={product2} alt="Nutella" />
+            <h3>Nutella Spread</h3>
+            <p>GHS 45.00</p>
+            <button>Add to Cart</button>
+          </div>
+          <div className="product-card">
+            <img src={product3} alt="Cereal" />
+            <h3>Breakfast Cereal</h3>
+            <p>GHS 35.00</p>
+            <button>Add to Cart</button>
+          </div>
+          <div className="product-card">
+            <img src={product4} alt="Welchi" />
+            <h3>Pringles</h3>
+            <p>GHS 15.00</p>
+            <button>Add to Cart</button>
           </div>
         </div>
       </section>
