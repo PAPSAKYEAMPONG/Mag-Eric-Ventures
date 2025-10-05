@@ -103,46 +103,43 @@
 }
 
 /*Hero*/
+
 .hero {
   display: flex;
-  height: 70vh;
+  height: 75vh;
   width: 100%;
-    background: linear-gradient(
-    205deg,
-    var(--primary-color) 0%,
-    var(--secondary-color) 100%
-  );
 }
 
 /* Left side text */
 .hero-content {
   flex: 1;
+  background-color: #f9fafb;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 40px;
+  padding: 0 80px;
 }
 
 .hero-content h1 {
   font-size: 3rem;
-  color: #F3F3F4;
+  color: #222;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
 .hero-content h1 span {
-  color: #F3F3F4
+  color: #2b7a0b;
 }
 
 .hero-content p {
   font-size: 1.1rem;
-  color: #353535;
+  color: #555;
   margin-bottom: 30px;
   line-height: 1.6;
 }
 
 .shop-btn {
-  background-color: #B3001B;
+  background-color: #2b7a0b;
   color: #fff;
   border: none;
   padding: 14px 32px;
@@ -154,48 +151,33 @@
 }
 
 .shop-btn:hover {
-  background-color: #F0A202;
+  background-color: #256508;
 }
 
 /* Right side full image */
 .hero-image {
-  flex: 1.7;
-  background-image: url("../images/hero.jpg");
+  flex: 1.5;
+  background-image: url("./images/Nescafe.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 /* Responsive design */
-/* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .hero {
     flex-direction: column;
     height: auto;
-    text-align: center;
   }
 
   .hero-content {
-    padding: 40px 20px;
-    padding-top: 0px;
-    order: 2; /* Text comes after image */
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  .shop-btn {
-    margin: 0 auto; /* Center the button */
+    padding: 60px 20px;
+    text-align: center;
+    align-items: center;
   }
 
   .hero-image {
-    flex: 1;
-    min-height: 400px; /* Give the image a minimum height */
-    order: 1; /* Image comes first */
+    width: 100%;
+    height: 300px;
   }
 }
