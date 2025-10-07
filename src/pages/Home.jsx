@@ -111,6 +111,95 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+      {/* Why Shop With Us */}
+<section className="why-shop">
+  <h2>Why Shop With Us</h2>
+  <div className="value-grid">
+    <div className="value-card">
+      <i className="fas fa-box-open"></i>
+      <h3>Genuine UK Imports</h3>
+      <p>
+        Top quality and authenticity
+        in every product.
+      </p>
+    </div>
+
+    <div className="value-card">
+      <i className="fas fa-shipping-fast"></i>
+      <h3>Fast Delivery</h3>
+      <p>
+        Get your items quickly, wherever you are in Ghana. <br></br>Our delivery is reliable and secure.
+      </p>
+    </div>
+
+    <div className="value-card">
+      <i className="fas fa-tags"></i>
+      <h3>Affordable Prices</h3>
+      <p>
+        Enjoy premium UK products at pocket-friendly prices<br></br>No hidden charges or surprises.
+      </p>
+    </div>
+
+    <div className="value-card">
+      <i className="fas fa-headset"></i>
+      <h3>Customer Support</h3>
+      <p>
+        We’re here for you! Our support team is ready to assist with any inquiries or issues.
+      </p>
+    </div>
+  </div>
+</section>
+
+{/* Footer Section */}
+<footer className="footer">
+  <div className="footer-container">
+    {/* Company Info */}
+    <div className="footer-about">
+      <h3>Mag-Eric Ventures</h3>
+      <p>
+        Your trusted UK-to-Ghana online store — bringing you premium biscuits, cereals,
+        drinks, toiletries, and household essentials at unbeatable prices.
+      </p>
+    </div>
+
+    {/* Quick Links */}
+    <div className="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    {/* Contact Info */}
+    <div className="footer-contact">
+      <h4>Contact Us</h4>
+      <p><i className="fas fa-phone"></i> +233 50 123 4567</p>
+      <p><i className="fas fa-envelope"></i> info@magericventures.com</p>
+      <p><i className="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+    </div>
+
+    {/* Social Links */}
+    <div className="footer-social">
+      <h4>Follow Us</h4>
+      <div className="social-icons">
+        <a href="#"><i className="fab fa-facebook"></i></a>
+        <a href="#"><i className="fab fa-instagram"></i></a>
+        <a href="#"><i className="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div className="footer-bottom">
+    <p>© {new Date().getFullYear()} Mag-Eric Ventures. All rights reserved.</p>
+  </div>
+</footer>
+
+
     </>
   );
 };
