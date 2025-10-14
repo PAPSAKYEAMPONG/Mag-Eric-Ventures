@@ -109,6 +109,30 @@ const Home = () => {
             <p>GHS 15.00</p>
             <button>Add to Cart</button>
           </div>
+          <div className="product-card">
+            <img src={product4} alt="Welchi" />
+            <h3>Pringles</h3>
+            <p>GHS 15.00</p>
+            <button>Add to Cart</button>
+          </div>
+          <div className="product-card">
+            <img src={product4} alt="Welchi" />
+            <h3>Pringles</h3>
+            <p>GHS 15.00</p>
+            <button>Add to Cart</button>
+          </div>
+          <div className="product-card">
+            <img src={product4} alt="Welchi" />
+            <h3>Pringles</h3>
+            <p>GHS 15.00</p>
+            <button>Add to Cart</button>
+          </div>
+          <div className="product-card">
+            <img src={product4} alt="Welchi" />
+            <h3>Pringles</h3>
+            <p>GHS 15.00</p>
+            <button>Add to Cart</button>
+          </div>
         </div>
       </section>
 
@@ -149,6 +173,16 @@ const Home = () => {
         We’re here for you! Our support team is ready to assist with any inquiries or issues.
       </p>
     </div>
+  </div>
+</section>
+
+{/* Newsletter Signup */}
+<section className="newsletter">
+  <h2>Stay Updated</h2>
+  <p>Subscribe to our newsletter for the latest deals and updates.</p>
+  <div className="newsletter-form">
+    <input type="email" placeholder="Enter your email" />
+    <button>Subscribe</button>
   </div>
 </section>
 
