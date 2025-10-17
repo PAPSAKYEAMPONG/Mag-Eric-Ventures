@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "../main.css";
 import flaxseed from '../assets/flaxseed.jpg';
 import kreteaz from '../assets/kreteaz.jpg';
@@ -22,6 +23,7 @@ import product4 from '../assets/Pringles.jpg';
 const images = [kreteaz, flaxseed, Avocadooil, olaycoconutoil, pepper, garlicherb, irishspring, softner, Nescafe];
 
 const Home = () => {
+  const navigate = useNavigate();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -137,101 +139,85 @@ const Home = () => {
       </section>
 
 
-      {/* Why Shop With Us */}
-<section className="why-shop">
-  <h2>Why Shop With Us</h2>
-  <div className="value-grid">
-    <div className="value-card">
-      <i className="fas fa-box-open"></i>
-      <h3>Genuine UK Imports</h3>
-      <p>
-        Top quality and authenticity
-        in every product.
-      </p>
-    </div>
+<section className="feel-good-section">
+  <div className="feel-good-overlay"></div>
 
-    <div className="value-card">
-      <i className="fas fa-shipping-fast"></i>
-      <h3>Fast Delivery</h3>
-      <p>
-        Get your items quickly, wherever you are in Ghana. <br></br>Our delivery is reliable and secure.
-      </p>
-    </div>
+  <div className="feel-good-content">
+    <h2>Let’s Make Your Day Brighter</h2>
+    <p>
+      At Mag-Eric Ventures, every product is chosen to bring a little joy to your everyday life.
+      From tasty biscuits and creamy spreads to your trusted home essentials — we’re here to make
+      your days smoother, happier, and more satisfying.
+    </p>
 
-    <div className="value-card">
-      <i className="fas fa-tags"></i>
-      <h3>Affordable Prices</h3>
-      <p>
-        Enjoy premium UK products at pocket-friendly prices<br></br>No hidden charges or surprises.
-      </p>
-    </div>
-
-    <div className="value-card">
-      <i className="fas fa-headset"></i>
-      <h3>Customer Support</h3>
-      <p>
-        We’re here for you! Our support team is ready to assist with any inquiries or issues.
-      </p>
-    </div>
-  </div>
-</section>
-
-{/* Newsletter Signup */}
-<section className="newsletter">
-  <h2>Stay Updated</h2>
-  <p>Subscribe to our newsletter for the latest deals and updates.</p>
-  <div className="newsletter-form">
-    <input type="email" placeholder="Enter your email" />
-    <button>Subscribe</button>
-  </div>
-</section>
-
-{/* Footer Section */}
-<footer className="footer">
-  <div className="footer-container">
-    {/* Company Info */}
-    <div className="footer-about">
-      <h3>Mag-Eric Ventures</h3>
-      <p>
-        Your trusted UK-to-Ghana online store — bringing you premium biscuits, cereals,
-        drinks, toiletries, and household essentials at unbeatable prices.
-      </p>
-    </div>
-
-    {/* Quick Links */}
-    <div className="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-
-    {/* Contact Info */}
-    <div className="footer-contact">
-      <h4>Contact Us</h4>
-      <p><i className="fas fa-phone"></i> +233 50 123 4567</p>
-      <p><i className="fas fa-envelope"></i> info@magericventures.com</p>
-      <p><i className="fas fa-map-marker-alt"></i> Accra, Ghana</p>
-    </div>
-
-    {/* Social Links */}
-    <div className="footer-social">
-      <h4>Follow Us</h4>
-      <div className="social-icons">
-        <a href="#"><i className="fab fa-facebook"></i></a>
-        <a href="#"><i className="fab fa-instagram"></i></a>
-        <a href="#"><i className="fab fa-whatsapp"></i></a>
+    <div className="feel-good-highlights">
+      <div className="highlight">
+        <i className="fas fa-cookie-bite"></i>
+        <span>Delicious Treats</span>
+      </div>
+      <div className="highlight">
+        <i className="fas fa-bath"></i>
+        <span>Everyday Essentials</span>
+      </div>
+      <div className="highlight">
+        <i className="fas fa-smile-beam"></i>
+        <span>Joy Guaranteed</span>
       </div>
     </div>
-  </div>
 
-  <div className="footer-bottom">
-    <p>© {new Date().getFullYear()} Mag-Eric Ventures. All rights reserved.</p>
+    <button className="shop-happiness-btn" onClick={() => navigate('/shop')}>
+      Shop Happiness
+    </button>
   </div>
-</footer>
+</section>
+
+      {/* Why Shop With Us */}
+<section className="why-shop"> 
+   <div className="why-shop-header"> 
+     <h2>Why Shop With Us</h2> 
+     <p>Your trusted source for genuine UK goods — delivered fast, priced right, and handled with care.</p> 
+   </div> 
+ 
+   <div className="value-grid"> 
+     <div className="value-card"> 
+       <div className="icon-circle"> 
+         <i className="fas fa-box-open"></i> 
+       </div> 
+       <h3>Genuine UK Imports</h3> 
+       <p>Every item is sourced directly from the UK to guarantee quality and authenticity you can trust.</p> 
+     </div> 
+ 
+     <div className="value-card"> 
+       <div className="icon-circle"> 
+         <i className="fas fa-shipping-fast"></i> 
+       </div> 
+       <h3>Fast Delivery</h3> 
+       <p>We deliver across Ghana — safe, quick, and right to your doorstep, so you never have to wait long.</p> 
+     </div> 
+ 
+     <div className="value-card"> 
+       <div className="icon-circle"> 
+         <i className="fas fa-tags"></i> 
+       </div> 
+       <h3>Affordable Prices</h3> 
+       <p>Shop premium UK brands at fair, transparent prices — no hidden fees or extra costs, ever.</p> 
+     </div> 
+ 
+     <div className="value-card"> 
+       <div className="icon-circle"> 
+         <i className="fas fa-headset"></i> 
+       </div> 
+       <h3>24/7 Customer Support</h3> 
+       <p>Need help? Our team is always ready to assist, ensuring your shopping experience stays smooth.</p> 
+     </div> 
+   </div> 
+ 
+   <div className="why-shop-cta"> 
+     <button onClick={() => navigate('/shop')}>Start Shopping</button> 
+   </div> 
+ </section>
+
+
 
 
     </>

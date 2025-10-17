@@ -19,7 +19,7 @@ const Navbar = () => {
         </ul>
 
         <div className="icons">
-          <span className="cart">🛒</span>
+          <Link to="/cart" className="cart">🛒</Link>
 
           {/* Mobile Menu Button */}
           <div 
